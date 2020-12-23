@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.productcard{
+  border : 2px solid #ae275f;
+}
+
+.productcard:hover {
+  border : 2px solid #ae275f;
+  transform: scale(1.05);
+}
