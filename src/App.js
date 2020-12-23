@@ -12,10 +12,14 @@ class App extends Component {
       <div>
          <Provider store={store}>
           <NavbarComponent />
-          <Switch>
-              <Route exact path="/" component={HomePage}​​​​​ />
-              <Route exact path="/car-insurance" component={HomePage}​​​​​ />
-          </Switch>
+          <Router>
+            <Route exact path="/" render={props =>(
+                  <React.Fragment>
+                    <HomePage />
+                  </React.Fragment>
+                )} >
+            </Route>
+         </Router>
          </Provider>
       </div>
     );
