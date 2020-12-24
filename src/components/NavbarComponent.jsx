@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import logo from '../images/logo.png';
+import About from './About';
+import { Switch, Route, Link } from "react-router-dom";
+import HomePage from './HomePage';
+import CarInsurance from './CarInsurance';
 
 class NavbarComponent extends Component {
     render() {
@@ -16,10 +20,10 @@ class NavbarComponent extends Component {
                         <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
+                            <a className="nav-link active" aria-current="page" href="/home">Home</a>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link" aria-current="page" href="#">About Us</a>
+                            <a className="nav-link" aria-current="page" href="/about">About Us</a>
                             </li>
                             <li className="nav-item">
                             <a className="nav-link" aria-current="page" href="#">Contact Us</a>
@@ -32,7 +36,7 @@ class NavbarComponent extends Component {
                                 Motor Insurance
                             </a>
                             <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a className="dropdown-item" href="#">Car Insurance</a></li>
+                                <li><a className="dropdown-item" href="/car-insurance">Car Insurance</a></li>
                                 <li><a className="dropdown-item" href="#">Bike Insurance</a></li>
                             </ul>
                             </li>
@@ -43,6 +47,7 @@ class NavbarComponent extends Component {
                         </div>
                     </div>
                 </nav>
+               
             </div>
         );
     }
