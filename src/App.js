@@ -21,7 +21,7 @@ class App extends Component {
               <Route exact path="/car-insurance" component={CarInsurance} />              
             </Switch>         
         </div>
-         
+    
          </Provider>
          
          
